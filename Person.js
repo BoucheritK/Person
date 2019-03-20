@@ -5,18 +5,18 @@ class Person {
     }
 
     tellMyname() {
-        console.log(`I am ${this.name}`)
+        return(`I am ${this.name}`)
     }
 
     tellMyage() {
-        console.log(`I am ${this.age} years olds`);
+        return(`I am ${this.age} years olds`);
     }
 }
 
 const Person1 = new Person("Jonh", 40) 
-Person1.tellMyname();
-Person1.tellMyage();
+console.log(Person1.tellMyname());
+console.log(Person1.tellMyage());
 
 const Person2 = new Person("Mary", 35)
-Person2.tellMyname();
-Person2.tellMyage();
+console.log(Person2.tellMyname());
+console.log(Person2.tellMyage());
